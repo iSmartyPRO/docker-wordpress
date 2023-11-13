@@ -5,7 +5,7 @@ It'll help to quickly deploy wordpress via docker.
 
 ## How it works
 
-You should have a database.
+You should have a database - you can use my [docker-maraidb](https://github.com/iSmartyPRO/docker-mariadb) repository
 
 #### Commands
 
