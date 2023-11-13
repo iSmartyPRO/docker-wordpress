@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+
+  wordpress:
+    container_name: ${DOCKER_CONTAINER_NAME}
+    image: wordpress:latest
+    restart: unless-stopped
+    ports:
+      - ${WPPORT}:80
+    environment:
+      DBHOST: ${DBHOST}
+      DBUSER: ${DBUSER}
+      DBPASS: ${DBPASS}
+      DBNAME: ${DBNAME}
+    volumes:
+      - ./files:/var/www/html
+
+networks:
+  default:
+    external:
+      name: "docker-lan"

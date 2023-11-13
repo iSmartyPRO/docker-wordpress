@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.env.sample
+!docker-compose.yml
+!README.md
+!/file/.gitkeep
